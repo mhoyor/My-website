@@ -1,16 +1,8 @@
-$(document).on('click', '#btn_submit', function (e) {
-  e.preventDefault()
-  Swal.fire({
+$('#btn_submit').on('click', function (e) {
+  var form = $(this).parents('form')
+  swal({
     title: 'Thanks for reaching out',
-    icon: 'success',
-    footer: 'I will get back soon',
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown',
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp',
-    },
-  }).then(function (result) {
-    $('#myForm').submit()
+    text: 'We will get back to you',
+    type: 'success',
   })
 })
