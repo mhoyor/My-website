@@ -1,19 +1,14 @@
 $(document).on('click', '#btn_submit', function (e) {
   e.preventDefault()
-  swal({
-    title: 'Confirm',
-    input: 'checkbox',
-    inputValue: 0,
-    inputPlaceholder: ' I agree with the Terms',
-    confirmButtonText: 'Continue',
-    inputValidator: function (result) {
-      return new Promise(function (resolve, reject) {
-        if (result) {
-          resolve()
-        } else {
-          reject('You need to agree with the Terms')
-        }
-      })
+  Swal.fire({
+    title: 'Thanks for reaching out',
+    icon: 'success',
+    footer: 'I will get back soon'
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown',
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp',
     },
   }).then(function (result) {
     $('#myForm').submit()
