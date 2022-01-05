@@ -1,10 +1,21 @@
-$(document).ready(function () {
-  $(document).on('click', 'submit', function () {
-    Swal.fire({
-      type: 'success',
-      title: 'Your work has been done',
-      showConfirmButton: false,
-      timer: 1500,
-    })
+$(document).on('click', '#btn-submit', function (e) {
+  e.preventDefault()
+  swal({
+    title: 'Confirm',
+    input: 'checkbox',
+    inputValue: 0,
+    inputPlaceholder: ' I agree with the Terms',
+    confirmButtonText: 'Continue',
+    inputValidator: function (result) {
+      return new Promise(function (resolve, reject) {
+        if (result) {
+          resolve()
+        } else {
+          reject('You need to agree with the Terms')
+        }
+      })
+    },
+  }).then(function (result) {
+    $('#myForm').submit()
   })
 })
