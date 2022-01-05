@@ -1,4 +1,4 @@
-$(document).on('click', '#btn-submit', function (e) {
+$(document).on('click', '#btn_submit', function (e) {
   e.preventDefault()
   swal({
     title: 'Confirm',
