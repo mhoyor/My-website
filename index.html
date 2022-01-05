@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 </head>
@@ -90,7 +92,7 @@
                         <div class="text">Alright Gadgets: A retail vendor for eloctronic gadgets</div>
                         <div class="desc"> 
                             <div class="descolumn">
-                                <a href="https://imperialgadgets.netlify.app">LIVE</a>
+                                <a href="https://imperialgadgets.netlify.app" target="_blank">LIVE</a>
                             </div>
                             <div class="descolumn">
                                 <a href="https://github.com/mhoyor/Alright-Gadget" target="_blank">GIT</a>
@@ -104,10 +106,10 @@
                         <div class="text">LACIBO RESTAURANT: Landing page for a restaurant.</div>
                         <div class="desc"> 
                             <div class="descolumn">
-                                <a href="https://lacibong.netlify.app">LIVE</a>
+                                <a href="https://lacibong.netlify.app" target="_blank">LIVE</a>
                             </div>
                             <div class="descolumn">
-                                <a href="https://github.com/mhoyor/Lacibo-Proprosal">GIT</a>
+                                <a href="https://github.com/mhoyor/Lacibo-Proprosal" target="_blank">GIT</a>
                                 </div>
                         </div>
                     </div>
@@ -249,13 +251,14 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message</div>
-                    <form action='#'  method="POST" name="contact">
+                    <form action= "#contact"  method="POST" name="contact" data-netlify = "true"> 
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
                             </div>
-                            <div class="field email">
+                            <div class="field email" id="form-control">
                                 <input type="email" placeholder="Email" required>
+                                
                             </div>
                         </div>
                         <div class="field">
@@ -276,10 +279,10 @@
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="https://github.com/Mhoyor">Mhoyor</a></span>
-         <p><span>Design inspiration By Arushay</span>
-        </p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="swal.js"></script>
+
 </body>
 </html>
