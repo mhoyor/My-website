@@ -618,8 +618,8 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    /* background: rgb(7, 6, 6); */
-    background: url('/images/razer.jpg');
+    background: rgb(7, 6, 6);
+    /* background: url('/images/razer.jpg'); */
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
